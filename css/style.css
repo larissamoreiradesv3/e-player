@@ -48,3 +48,23 @@ ul{
     display: flex;
     justify-content: space-around;
 }
+.banner{
+    width: 100%;
+    height: 400px;
+    background-image: url("../image/meta_mundo.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botao{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+.banner .botao{
+    margin-top: 242px;
+}
