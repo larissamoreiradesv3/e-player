@@ -68,3 +68,28 @@ ul{
 .banner .botao{
     margin-top: 242px;
 }
+.sobre{
+    background-image: url("../image/Teams/T6.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0 100%);
+     width: 100%;
+     min-height: 350px;
+     margin: 20px 0px;
+     color: white;
+     padding: 100px 0;
+}
+.sobre .container{
+    display: flex;
+    justify-content: flex-start;
+}
+.sobre .container div{
+    width: 40%;
+
+}
+.campea{
+    position: absolute;
+    right: 15%;
+    top: 470px;
+}
