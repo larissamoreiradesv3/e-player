@@ -307,7 +307,7 @@ footer p{
         justify-content: start;
     }
     .termos label{
-        text-transform: lowercase;
+        text-transform: initial;
         margin-left: 0.5em;
 
     }
@@ -316,4 +316,31 @@ footer p{
         width: 60%;
         margin-top: 2em;
         cursor: pointer;
+    }
+    /*Medida máxima: 1200px*/
+    @media screen and (max-width: 1200px){
+        .campea{
+            right: 0%;
+        }
+        .container{
+            width: 95%;
+        }
+    }
+    /*Medida máxima: 768px*/
+    @media screen and (max-width: 768px){
+        header img{
+            max-width: 180px;
+        }
+        .container{
+            width: 98%;
+        }
+        .campea{
+            max-width: 500px;
+            margin-top: 70px;
+            right: -150px;
+        }
+        .sobre .container div{
+            width: 55%;
+            margin-left: 30px;
+        }
     }
