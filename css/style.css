@@ -343,4 +343,43 @@ footer p{
             width: 55%;
             margin-left: 30px;
         }
-    }
+        .ao_vivo{
+            padding: 5.3em 5px;
+            width: 50%;
+            flex-wrap: wrap; /*atriburo para container que serva para quando o conteúdo fica excessivo qunado houver a redução de tela e automaticamente ele quebra a linha e vai colocando o conteudo em baixo*/
+        }
+        .em_breve{
+            width: 50%;
+            flex-wrap: wrap;
+        }
+        .em_breve .partida{
+            margin: 0.5em 0;
+        }
+        /*sessão noticias*/
+        .noticias{
+            flex-direction: column;
+        }
+        .card{
+            display: flex;
+            width: 100%;
+        }
+        .card img{
+            width: 30%;
+        }
+        .botao{
+            font-size: 0.9em;
+        }
+        footer .container{
+            padding-top: 0.3em;
+            width: 94%;
+        }
+        .mob_logo_sociais{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+        .mob_logo_sociais{
+            max-width: 235px;
+        }
+      
+     }
