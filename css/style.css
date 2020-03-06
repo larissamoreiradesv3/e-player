@@ -338,9 +338,128 @@ footer p{
             max-width: 500px;
             margin-top: 70px;
             right: -150px;
-        }
+    }
         .sobre .container div{
             width: 55%;
             margin-left: 30px;
         }
+        .ao_vivo{
+            padding: 5.3em 5px;
+            width: 50%;
+            flex-wrap: wrap; /*atriburo para container que serva para quando o conteúdo fica excessivo qunado houver a redução de tela e automaticamente ele quebra a linha e vai colocando o conteudo em baixo*/
+        }
+        .em_breve{
+            width: 50%;
+            flex-wrap: wrap;
+        }
+        .em_breve .partida{
+            margin: 0.5em 0;
+        }
+        /*sessão noticias*/
+        .noticias{
+            flex-direction: column;
+        }
+        .card{
+            display: flex;
+            width: 100%;
+        }
+        .card img{
+            width: 30%;
+        }
+        .botao{
+            font-size: 0.9em;
+        }
+        footer .container{
+            padding-top: 0.3em;
+            width: 94%;
+        }
+        .mob_logo_sociais{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+        .mob_logo_sociais{
+            max-width: 235px;
+        }
+     }
+     .cabecalho .fa-bars{
+         color: var(--purple);
+         font-size: 2em;
+         display: none;
+     }
+     /*Mobile 460*/
+     @media screen and (max-width: 460px){
+        .cabecalho .fa-bars{
+            display: block;
+        }
+        .cabecalho div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+             width: 100%;
+             padding: 0 2em;
+           
+        }
+        #menu{
+            position: absolute;
+            top: 73px; /*pixels de cima para baixo, serve para fazer algo descer ou subir*/
+            background-color: var(--background);
+            box-shadow: 0px 0px 22px #000000;          
+            width: 100%;
+            display: none; /*para sumir*/ 
+        }
+        .cabecalho ul{
+            flex-direction: column;
+            height: 250px;
+        }
+        .cabecalho ul a{
+            background-color: var(--background);
+            padding: 0.5em 80% 1em 0.5em;
+            margin: 0.1em 2em;
+        }
+        .campea{ /*para ela sumir*/
+            display: none;
+        }
+        .sobre .container div{
+            width: 85%;
+            margin-bottom: 1em;
+        }
+        .sobre .container h1{
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        #horarios .container{
+            flex-direction: column;
+        }
+        .ao_vivo, .em_breve{
+            padding: 1em;
+            border: none;
+        }
+        .partida{
+            margin: 1em 0;
+        }
+        /* Sessão de Noticias */
+        .card{
+            flex-direction: column;
+            width: 100%;
+            margin: auto;
+        }
+        .card img{
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+        .noticias{
+            padding-right: 15px;
+            width: 95%;
+        }
+        .recentes{
+            padding: 0.5em;
+            margin: auto;
+            margin: 2em 0;
+        }
+        .content{
+            flex-direction: column;
+        }
+        
     }
